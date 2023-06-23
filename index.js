@@ -3,11 +3,13 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes')
 const app = express();
+var cors = require('cors')
 
 
 // middleware
 app.use(express.static('public'));
 app.use(express.json());
+app.use(cors())
 
 
 // view engine
