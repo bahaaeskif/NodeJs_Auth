@@ -47,11 +47,11 @@ const createToken = (user) => {
 };
 // controller actions
 module.exports.signup_get = (req, res) => {
-  res.render('/api/v1/signup');
+  res.render('/signup');
 }
 
 module.exports.login_get = (req, res) => {
-  res.render('/api/v1/login');
+  res.render('/login');
 }
 
 module.exports.signup_post = async (req, res) => {
